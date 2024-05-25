@@ -2,6 +2,8 @@ using E_Belge.API.Middlewares;
 using E_Belge.Business.Registration;
 using E_Belge.Business.Utilities.AutoMapper;
 using E_Belge.Repositories.Registration;
+using Blazored.Modal;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,15 +23,13 @@ builder.Services.RegisterRepositories();
 builder.Services.RegisterServices();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-builder.Services.AddControllersWithViews();/**/
-builder.Services.AddRazorPages();/**/
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+  app.UseWebAssemblyDebugging();/**/
+
   app.UseSwagger();
   app.UseSwaggerUI();
 }
@@ -40,7 +40,11 @@ app.UseMiddleware<ExceptionHandlerMiddleware>();
 
 app.UseAuthorization();
 
-app.MapRazorPages();/**/
+app.UseBlazorFrameworkFiles();
+app.UseStaticFiles();
+
+//app.UseRouting();/**/
+
 app.MapControllers();
 app.MapFallbackToFile("index.html");/**/
 

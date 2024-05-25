@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Belge.Repositories", "E-B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Belge.Business", "E-Belge\E-Belge.Business\E-Belge.Business.csproj", "{38A86A5C-2408-4F91-9E4A-21D2C9E4A67E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Belge.UI.Blazor", "E-Belge\E-Belge.UI.Blazor\E-Belge.UI.Blazor.csproj", "{8103B044-73EB-494F-AFA7-912FFA52D884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{38A86A5C-2408-4F91-9E4A-21D2C9E4A67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A86A5C-2408-4F91-9E4A-21D2C9E4A67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A86A5C-2408-4F91-9E4A-21D2C9E4A67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8103B044-73EB-494F-AFA7-912FFA52D884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8103B044-73EB-494F-AFA7-912FFA52D884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8103B044-73EB-494F-AFA7-912FFA52D884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8103B044-73EB-494F-AFA7-912FFA52D884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{DBA7E078-182A-4E71-AC71-8F86D36B4F1F} = {B77E065D-346F-42A9-A891-0C9892DA182A}
 		{1051007E-93D3-4B32-81A5-F97200602B93} = {B77E065D-346F-42A9-A891-0C9892DA182A}
 		{38A86A5C-2408-4F91-9E4A-21D2C9E4A67E} = {B77E065D-346F-42A9-A891-0C9892DA182A}
+		{8103B044-73EB-494F-AFA7-912FFA52D884} = {B77E065D-346F-42A9-A891-0C9892DA182A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7730BD54-C9F6-4A8D-B572-96D9584BC23A}
