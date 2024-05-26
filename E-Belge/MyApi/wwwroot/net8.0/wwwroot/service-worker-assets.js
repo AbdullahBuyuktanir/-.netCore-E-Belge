@@ -885,15 +885,15 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-86AdcbcmHxucFiNIg1nag9MrGD1qDlJeKf83XHUBhWM=",
+      "hash": "sha256-ukOvdVwiSN63J5mNJhsfHt6n\/6EsKRn5VVomkbzFMXc=",
       "url": "_framework\/E-Belge.UI.Blazor.wasm"
     },
     {
-      "hash": "sha256-sbrejcVvr15qVb0mf3J96TthOSXoilieUEy4+WrdUqQ=",
+      "hash": "sha256-jLk9IO+KTcluSD\/eOjOLtVjcGiLYbh5cAMUydi++\/BM=",
       "url": "_framework\/E-Belge.UI.Blazor.pdb"
     },
     {
-      "hash": "sha256-0u+fDuqXIWhlRIOvrnJl0c2g6K3cUoRRnpXqh2JouI4=",
+      "hash": "sha256-j\/XO+omKLS4xWaXAYNONwI2IHh+U9A\/PzCQCIthkT3k=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -905,5 +905,5 @@
       "url": "_content\/Blazored.Modal\/Blazored.Modal.bundle.scp.css"
     }
   ],
-  "version": "In1jPz9p"
+  "version": "mYs4bPbV"
 };
