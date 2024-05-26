@@ -5,7 +5,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -71,6 +71,10 @@
     {
       "hash": "sha256-enKgCMkYmCpfEcmg6Annbmc40VZ\/A6aYYSQjZfVn2cU=",
       "url": "sample-data\/weather.json"
+    },
+    {
+      "hash": "sha256-lOCs45frNf+D7me6lKLgUhRCdt4VwHCp9H6Ct+YWzfs=",
+      "url": "_framework\/blazor.webassembly.js"
     },
     {
       "hash": "sha256-7gnkpZhO\/5TBOOio8N0OQe0Ajzrh+W\/i1U1Zuz8n03Y=",
@@ -845,20 +849,12 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-qJB30QURoyH3y3WyayHu6nMFIx2XNOkXCez7tagGpvE=",
-      "url": "_framework\/dotnet.7.0.10.x0q2x1lfx3.js"
-    },
-    {
       "hash": "sha256-pf9chcB37Cf13KuuvScsozomnAUanMeCfvDr9Wqofh8=",
       "url": "_framework\/dotnet.timezones.blat"
     },
     {
       "hash": "sha256-gdnUvePnfbvTJDGtaK1+TnCtuTiC5NZjlYZ9kgEpMO0=",
       "url": "_framework\/dotnet.wasm"
-    },
-    {
-      "hash": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4=",
-      "url": "_framework\/icudt.dat"
     },
     {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -877,16 +873,16 @@
       "url": "_framework\/E-Belge.UI.Blazor.dll"
     },
     {
-      "hash": "sha256-vmd1FPjRdtU4MdDFWLJ3ap4DzLWtok2LZjth4ELIB2E=",
-      "url": "_framework\/E-Belge.UI.Blazor.pdb"
-    },
-    {
-      "hash": "sha256-lOCs45frNf+D7me6lKLgUhRCdt4VwHCp9H6Ct+YWzfs=",
-      "url": "_framework\/blazor.webassembly.js"
-    },
-    {
       "hash": "sha256-Fv0DHZG6i+0YEuCu6vnDM+HFcsSD3CguexTXhGmVYCo=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-J9IVsSLjfEIyn\/0XKSDWXHMve5eK11v9Aj06G7zPUYo=",
+      "url": "_framework\/dotnet.7.0.19.650f4osdui.js"
+    },
+    {
+      "hash": "sha256-T8ddcfWOEpoRW8aw5f5L99IoRkma\/iY5OtH35YAqpcA=",
+      "url": "_framework\/E-Belge.UI.Blazor.pdb"
     },
     {
       "hash": "sha256-JnMrV9FYOYSibA85LvQGGV3uJ7zv2njdJX1GFslt2Aw=",
@@ -897,5 +893,5 @@
       "url": "_content\/Blazored.Modal\/Blazored.Modal.bundle.scp.css"
     }
   ],
-  "version": "D1pAz2we"
+  "version": "MPbAcX2M"
 };
