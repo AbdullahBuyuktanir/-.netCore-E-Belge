@@ -81,6 +81,18 @@
       "url": "_framework\/Blazored.Modal.wasm"
     },
     {
+      "hash": "sha256-PYJ3IBSIJu8xy0XOmNAcukivZln\/Q+yOSviCaIMTUCg=",
+      "url": "_framework\/Dapper.wasm"
+    },
+    {
+      "hash": "sha256-Dt7DBDag97mASqcSTSWerTCmGMiE8QnbGYMRbfGmqvQ=",
+      "url": "_framework\/FluentValidation.wasm"
+    },
+    {
+      "hash": "sha256-7qU3A7j7mD9tbvniGnyixolLan85x5vH+d1S+hhcqmI=",
+      "url": "_framework\/FluentValidation.DependencyInjectionExtensions.wasm"
+    },
+    {
       "hash": "sha256-OLGFBcpljsXLhIaQF0m6arMwqtgxgm6RbZTaO8tfkRU=",
       "url": "_framework\/Microsoft.AspNetCore.Authorization.wasm"
     },
@@ -167,6 +179,10 @@
     {
       "hash": "sha256-mHBj908L0vpzL6sgaJuWDGhOHidz54+ao9EhBpC41nQ=",
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
+    },
+    {
+      "hash": "sha256-m8iqOvS0eO8rCPcpsZDK+jTsoIdLh7PpQHnm9qeTm+U=",
+      "url": "_framework\/Npgsql.wasm"
     },
     {
       "hash": "sha256-JqVBy6SV+3qk+IK3VJiyIDt9CsVk6b1\/ytTXmrI4mTM=",
@@ -881,15 +897,31 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-JwyraekUgrZvlHXITLbsXnQxW9+7k9y7r4gW+YCNFeg=",
+      "hash": "sha256-7+dCazbliKJ9qGIij0lUhDAcuOR6BuoOd2A2V4ckZHU=",
+      "url": "_framework\/Core.wasm"
+    },
+    {
+      "hash": "sha256-fhBfGD0RBpAgf77YHR6vEhwyN06G5ozQCyVfMn8Dl4w=",
+      "url": "_framework\/E-Belge.Model.wasm"
+    },
+    {
+      "hash": "sha256-++ehUo4eWCN+3E05PN1bByyKTdt0JKe8XMcNi1afvyQ=",
+      "url": "_framework\/E-Belge.Model.pdb"
+    },
+    {
+      "hash": "sha256-64CJv4Se0hs6OM1Ypng7zIBqtBTbrTQ6N6va2fMgKFU=",
+      "url": "_framework\/Core.pdb"
+    },
+    {
+      "hash": "sha256-B8PMErkOWLU\/BmhY4wIljbUr80KiR4TGcGvlZVhvYUM=",
       "url": "_framework\/E-Belge.UI.Blazor.wasm"
     },
     {
-      "hash": "sha256-NU94hkbKEXC15a3TmOghgv4Oy8q3UW2Gb0wxv29GlAI=",
+      "hash": "sha256-KTkXFeUYPFLwEYkUYHiGIWeOa3rjqaRe0fEjgP9vGmg=",
       "url": "_framework\/E-Belge.UI.Blazor.pdb"
     },
     {
-      "hash": "sha256-LbrdyJjxX8bSM\/DsplZLgzs2uhUV9PTRLsNwFZiDDtE=",
+      "hash": "sha256-vbwticw\/ojfH7e\/Lr0LJ8GhjhpIoDd5Wj3\/Hb2QCFXo=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -933,5 +965,5 @@
       "url": "_content\/Blazor.Bootstrap\/Blazor.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "KBo29TNy"
+  "version": "cOxNl+DC"
 };

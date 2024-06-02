@@ -1,5 +1,10 @@
 ﻿using E_Belge.Model.DataTransferObjects;
 using FluentValidation;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace E_Belge.Model.Validators.Customers
 {

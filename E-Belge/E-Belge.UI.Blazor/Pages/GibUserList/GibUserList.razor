@@ -1,4 +1,5 @@
-﻿@page "/gibuserlist"
+﻿@inject HttpClient Http
+@page "/gibuserlist"
 
 <h3>GibUserList</h3>
 
@@ -22,28 +23,28 @@
 </Grid>
 
 @code {
-
   protected override Task OnInitializedAsync()
   {
     LoadList();
     return base.OnInitializedAsync();
-  }
 
+  }
   private async Task<string> LoadList()
   {
     try
     {
+      // using (HttpClient client = new HttpClient())
+      // {
+      //   HttpResponseMessage response = await client.GetAsync("https://localhost:7039/api/GibUserList?PageNumber=1&Limit=1000");
+      //   response.EnsureSuccessStatusCode();
+      //   string responseBody = await response.Content.ReadAsStringAsync();
+      //   return responseBody;
+      // }
       using (HttpClient client = new HttpClient())
       {
-        HttpResponseMessage response = await client.GetAsync("api/GibUserList?PageNumber=1&Limit=1000");
-        response.EnsureSuccessStatusCode();
-        string responseBody = await response.Content.ReadAsStringAsync();
-        return responseBody;
-      }
-      using (HttpClient client = new HttpClient())
-      {
-        //var response = await client.GetFromJsonAsync<PaginationDataResult<IEnumerable<GibUserListDto>>>("api/GibUserList?PageNumber=1&Limit=1000");
-
+        Console.WriteLine(Http.BaseAddress);
+        var response = await client.GetFromJsonAsync<PaginationDataResult<IEnumerable<GibUserListDto>>>("api/GibUserList?PageNumber=1&Limit=1000");
+        return "";
       }
     }
     catch (Exception ex)

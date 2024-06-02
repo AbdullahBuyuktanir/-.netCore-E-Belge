@@ -1,4 +1,10 @@
 ﻿using Core.Model.Abstract;
+using System;
+using System.Collections.Generic;
+using System.Formats.Asn1;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace E_Belge.Model.Model;
 
