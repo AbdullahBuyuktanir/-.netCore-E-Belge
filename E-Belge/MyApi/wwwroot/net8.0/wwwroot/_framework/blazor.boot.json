@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "E-Belge.UI.Blazor",
   "resources": {
-    "hash": "sha256-8R8RiaaClS+GGX1uwMTn0V46qVK9KiQpf9jRc56tAio=",
+    "hash": "sha256-H1leful7+saR1IcrLYn3hHthm+mu5bpqfkjARbTwHvI=",
     "jsModuleNative": {
       "dotnet.native.8.0.5.v246jblgg3.js": "sha256-boyHe+0RMZDkzBKGhsrnXPhPg3oZ6UqJnTUzngJPjNY="
     },
@@ -214,18 +214,21 @@
       "mscorlib.wasm": "sha256-XvLAB5IyfVSmj5aaGnPwgVFaaZz8jXmbN8WmeopiPBM=",
       "netstandard.wasm": "sha256-TbMssdnuTiKq1gjTPkpgROAuWN0uhvPnagvWR+wAgNs=",
       "System.Private.CoreLib.wasm": "sha256-sscg+Efk8ROPq+q4IVmhShzITuoOYvB8Bsc+Mp9vcSM=",
-      "Core.wasm": "sha256-7+dCazbliKJ9qGIij0lUhDAcuOR6BuoOd2A2V4ckZHU=",
-      "E-Belge.Model.wasm": "sha256-fhBfGD0RBpAgf77YHR6vEhwyN06G5ozQCyVfMn8Dl4w=",
-      "E-Belge.UI.Blazor.wasm": "sha256-KtLUum/vqdCuNDgQGXqJWkb/DFO8vc5CsTv1/VLi+W4="
+      "Core.wasm": "sha256-zjf0s5Ewqa2YUYsqCDD2nXPiDQeAKSlzOls4Uj4cptw=",
+      "E-Belge.Model.wasm": "sha256-EwQO4wOJfqt+qz7+6KlTCpj7balLw6hPH5g28cS4Lu4=",
+      "E-Belge.UI.Blazor.wasm": "sha256-6mHMpSbQQeGBuan0GKduj08FHT7J0I2j8jDPHe2keDQ="
     },
     "pdb": {
-      "E-Belge.Model.pdb": "sha256-++ehUo4eWCN+3E05PN1bByyKTdt0JKe8XMcNi1afvyQ=",
-      "Core.pdb": "sha256-64CJv4Se0hs6OM1Ypng7zIBqtBTbrTQ6N6va2fMgKFU=",
-      "E-Belge.UI.Blazor.pdb": "sha256-rianv6chwvEHEjXzlspamDrQM50U6GFn/bwH1vBGEMo="
+      "E-Belge.Model.pdb": "sha256-fhne9rlzZErT/PDhA5ucY7Qu59bTjYyDn22ePJgNcuI=",
+      "Core.pdb": "sha256-dRMWGNwKE20T1PIACPAddWj4LBzvFBDftc/507hAM/M=",
+      "E-Belge.UI.Blazor.pdb": "sha256-nRe696BzPAvp41ky9BkVbeVT46UypWQCZ6DHwtAx8HU="
     }
   },
   "cacheBootResources": true,
   "debugLevel": -1,
+  "appsettings": [
+    "../appsettings.json"
+  ],
   "globalizationMode": "sharded",
   "extensions": {
     "blazor": {}

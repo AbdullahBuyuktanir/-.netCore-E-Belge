@@ -1,0 +1,94 @@
+﻿@inject HttpClient Http
+@page "/gibuserlistclient"
+
+<h3>GibUserListClient</h3>
+
+<Grid TItem="GibUserListDto"
+      Class="table table-hover table-bordered table-striped"
+      DataProvider="EmployeesDataProvider"
+      AllowFiltering="true"
+      AllowPaging="true"
+      PageSize="50"
+      AllowSorting="true"
+      AllowSelection="true"
+      SelectionMode="GridSelectionMode.Multiple"
+      SelectedItemsChanged="OnSelectedItemsChanged"
+      Responsive="true">
+
+  <GridColumn TItem="GibUserListDto" HeaderText="Id" PropertyName="GibUserId" SortKeySelector="item => item.GibUserId">
+    @context.GibUserId
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Ünvan" PropertyName="Unvan" SortString="Unvan" SortKeySelector="item => item.Unvan">
+    @context.Unvan
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Vergi No" PropertyName="VergiNo" SortKeySelector="item => item.VergiNo">
+    @context.VergiNo
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Belge Tipi" PropertyName="BelgeTipi" SortKeySelector="item => item.BelgeTipi">
+    @context.BelgeTipi
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Adres Tipi" PropertyName="AdresTipi" SortKeySelector="item => item.AdresTipi">
+    @context.AdresTipi
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Oluşturma Tarihi" PropertyName="OlusturmaTarihi" SortKeySelector="item => item.OlusturmaTarihi">
+    @context.OlusturmaTarihi
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Etiket" PropertyName="Etiket" SortKeySelector="item => item.Etiket">
+    @context.Etiket
+  </GridColumn>
+</Grid>
+
+<div class="mt-3">
+  Selected Items Count: @selectedGibUser.Count
+</div>
+
+<div class="mt-2">
+  Selected Employees:
+  <ul>
+    @foreach (var user in selectedGibUser)
+    {
+      <li>@user.Unvan</li>
+    }
+  </ul>
+</div>
+
+
+@code {
+
+  private IEnumerable<GibUserListDto> gibUserList = default!;
+
+  private HashSet<GibUserListDto> selectedGibUser = new();
+
+  private async Task<GridDataProviderResult<GibUserListDto>> EmployeesDataProvider(GridDataProviderRequest<GibUserListDto> request)
+  {
+    try
+    {
+      using (HttpClient client = new HttpClient())
+      {
+        if (gibUserList is null)
+        {
+          var result = await client.GetFromJsonAsync<PaginationDataResult<IEnumerable<GibUserListDto>>>(String.Concat(Http.BaseAddress, "api/GibUserList?PageNumber=1&Limit=1000"));
+
+          if (result is not null && result.IsSuccess)
+            gibUserList = result.Data;
+        }
+
+        return await Task.FromResult(request.ApplyTo(gibUserList));
+      }
+    }
+    catch (Exception ex)
+    {
+      throw ex;
+    }
+  }
+
+  private Task OnSelectedItemsChanged(HashSet<GibUserListDto> gibUserList)
+  {
+    selectedGibUser = gibUserList is not null && gibUserList.Any() ? gibUserList : new();
+    return Task.CompletedTask;
+  }
+}
+
+
+
+

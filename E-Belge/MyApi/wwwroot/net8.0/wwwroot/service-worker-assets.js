@@ -65,12 +65,16 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-gvHfnndfEu1tRf0rFb5988rWq7ITIotOaE8+AMbKYbc=",
-      "url": "_framework\/blazor.webassembly.js"
+      "hash": "sha256-pZwwEom1DYGp1k4tfswgRCqcxm9lHZw44+IoZVVVxKo=",
+      "url": "appsettings.json"
     },
     {
       "hash": "sha256-u0H1gPhrbgJDado00g+gJ0p0C0QFf3eLqzIwg0bit\/g=",
       "url": "E-Belge.UI.Blazor.styles.css"
+    },
+    {
+      "hash": "sha256-gvHfnndfEu1tRf0rFb5988rWq7ITIotOaE8+AMbKYbc=",
+      "url": "_framework\/blazor.webassembly.js"
     },
     {
       "hash": "sha256-V0ozCRYxmIQ33AkuDi4UBSvqKsTNFLckzX5jrnrdxEs=",
@@ -897,31 +901,31 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-7+dCazbliKJ9qGIij0lUhDAcuOR6BuoOd2A2V4ckZHU=",
+      "hash": "sha256-zjf0s5Ewqa2YUYsqCDD2nXPiDQeAKSlzOls4Uj4cptw=",
       "url": "_framework\/Core.wasm"
     },
     {
-      "hash": "sha256-fhBfGD0RBpAgf77YHR6vEhwyN06G5ozQCyVfMn8Dl4w=",
+      "hash": "sha256-EwQO4wOJfqt+qz7+6KlTCpj7balLw6hPH5g28cS4Lu4=",
       "url": "_framework\/E-Belge.Model.wasm"
     },
     {
-      "hash": "sha256-++ehUo4eWCN+3E05PN1bByyKTdt0JKe8XMcNi1afvyQ=",
+      "hash": "sha256-fhne9rlzZErT\/PDhA5ucY7Qu59bTjYyDn22ePJgNcuI=",
       "url": "_framework\/E-Belge.Model.pdb"
     },
     {
-      "hash": "sha256-64CJv4Se0hs6OM1Ypng7zIBqtBTbrTQ6N6va2fMgKFU=",
+      "hash": "sha256-dRMWGNwKE20T1PIACPAddWj4LBzvFBDftc\/507hAM\/M=",
       "url": "_framework\/Core.pdb"
     },
     {
-      "hash": "sha256-B8PMErkOWLU\/BmhY4wIljbUr80KiR4TGcGvlZVhvYUM=",
+      "hash": "sha256-6mHMpSbQQeGBuan0GKduj08FHT7J0I2j8jDPHe2keDQ=",
       "url": "_framework\/E-Belge.UI.Blazor.wasm"
     },
     {
-      "hash": "sha256-KTkXFeUYPFLwEYkUYHiGIWeOa3rjqaRe0fEjgP9vGmg=",
+      "hash": "sha256-nRe696BzPAvp41ky9BkVbeVT46UypWQCZ6DHwtAx8HU=",
       "url": "_framework\/E-Belge.UI.Blazor.pdb"
     },
     {
-      "hash": "sha256-vbwticw\/ojfH7e\/Lr0LJ8GhjhpIoDd5Wj3\/Hb2QCFXo=",
+      "hash": "sha256-J7asgi\/Znu4+Vxlt4x2ngq19aDxZyiUmGma38K9J120=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -965,5 +969,5 @@
       "url": "_content\/Blazor.Bootstrap\/Blazor.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "cOxNl+DC"
+  "version": "gfqLBpj6"
 };

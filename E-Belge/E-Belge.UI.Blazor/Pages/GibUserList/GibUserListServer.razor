@@ -1,0 +1,73 @@
+﻿@inject HttpClient Http
+@page "/gibuserlistserver"
+
+<h3>GibUserList</h3>
+
+<Grid TItem="GibUserListDto"
+      Class="table table-hover table-bordered table-striped"
+      DataProvider="GibUserListDataProvider"
+      AllowFiltering="true"
+      AllowPaging="true"
+      AllowSorting="true" PageSize="50"
+      Responsive="true">
+
+  <GridColumn TItem="GibUserListDto" HeaderText="Id" PropertyName="GibUserId" SortString="GibUserId" SortKeySelector="item => item.GibUserId">
+    @context.GibUserId
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Ünvan" PropertyName="Unvan" SortString="Unvan" SortKeySelector="item => item.Unvan">
+    @context.Unvan
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Vergi No" PropertyName="VergiNo" SortString="VergiNo" SortKeySelector="item => item.VergiNo">
+    @context.VergiNo
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Belge Tipi" PropertyName="BelgeTipi" SortString="BelgeTipi" SortKeySelector="item => item.BelgeTipi">
+    @context.BelgeTipi
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Adres Tipi" PropertyName="AdresTipi" SortString="AdresTipi" SortKeySelector="item => item.AdresTipi">
+    @context.AdresTipi
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Oluşturma Tarihi" PropertyName="OlusturmaTarihi" SortString="OlusturmaTarihi" SortKeySelector="item => item.OlusturmaTarihi">
+    @context.OlusturmaTarihi
+  </GridColumn>
+  <GridColumn TItem="GibUserListDto" HeaderText="Etiket" PropertyName="Etiket" SortString="Etiket" SortKeySelector="item => item.Etiket">
+    @context.Etiket
+  </GridColumn>
+</Grid>
+
+
+@code {
+
+  private async Task<GridDataProviderResult<GibUserListDto>> GibUserListDataProvider(GridDataProviderRequest<GibUserListDto> request)
+  {
+    try
+    {
+      using (HttpClient client = new HttpClient())
+      {
+        var response = await client.GetFromJsonAsync<PaginationDataResult<IEnumerable<GibUserListDto>>>(String.Concat(Http.BaseAddress, "api/GibUserList?PageNumber=1&Limit=1000"));
+
+        string sortString = "";
+        SortDirection sortDirection = SortDirection.None;
+
+        if (request.Sorting is not null && request.Sorting.Any())
+        {
+          // Note: Multi column sorting is not supported at this moment
+          sortString = request.Sorting.FirstOrDefault()!.SortString;
+          sortDirection = request.Sorting.FirstOrDefault()!.SortDirection;
+        }
+        //var result = _employeeService.GetEmployees(request.Filters, request.PageNumber, request.PageSize, sortString, sortDirection);
+
+        return await Task.FromResult(new GridDataProviderResult<GibUserListDto> { Data = response?.Data, TotalCount = response?.TotalRecord });
+      }
+    }
+    catch (Exception ex)
+    {
+      throw ex;
+    }
+
+  }
+}
+
+
+
+
+

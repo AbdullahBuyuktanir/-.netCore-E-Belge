@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Belge.Business", "E-Belge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Belge.UI.Blazor", "E-Belge\E-Belge.UI.Blazor\E-Belge.UI.Blazor.csproj", "{8103B044-73EB-494F-AFA7-912FFA52D884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Belge.Model", "E-Belge\E-Belge.Model\E-Belge.Model.csproj", "{7BC3BA59-7CD9-4E9D-A85B-210682920B0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Belge.Model", "E-Belge\E-Belge.Model\E-Belge.Model.csproj", "{7BC3BA59-7CD9-4E9D-A85B-210682920B0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
