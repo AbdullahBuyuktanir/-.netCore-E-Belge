@@ -14,7 +14,6 @@ namespace Core.DataAccess.Abstract
     int Execute<TModel>(string query, TModel model);
     int ExecuteScalar(string query);
 
-    //bulk insert
-    //procedure select gibi sql operasyonlarını da ekle zamanla 
+    void BulkInsert<TModel>(List<TModel> modelList, string tableName) where TModel : class;
   }
 }

@@ -4,6 +4,7 @@ using E_Belge.Model.Model;
 using E_Belge.Repositories.Abstract;
 using Microsoft.Extensions.Configuration;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,5 +39,10 @@ public class GibUserListRepository : IGibUserListRepository
   public int GetCountGibUserList(string query)
   {
     return _dbRepository.ExecuteScalar(query);
+  }
+
+  public void BulkInsertGibUserList(List<GibUserList> gibUserList)
+  {
+     _dbRepository.BulkInsert<GibUserList>(gibUserList, "EDGIMUKE");
   }
 }

@@ -12,6 +12,6 @@ namespace E_Belge.Model.DataTransferObjects
     public required string AdresTipi { get; set; }
     public required DateTime OlusturmaTarihi { get; set; }
     public required DateTime IlkOlusturmaTarihi { get; set; }
-    public DateTime SilinmeTarihi { get; set; }
+    public Object SilinmeTarihi { get; set; }
   }
 }

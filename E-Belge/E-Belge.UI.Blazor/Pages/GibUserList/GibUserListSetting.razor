@@ -1,7 +1,45 @@
 ﻿@page "/gibuserlistsetting"
 
-<h3>Component</h3>
+<h3>Genel İşlemler</h3>
+
+<Preload LoadingText="Loading..." />
+
+
+<Button Color="ButtonColor.Primary" @onclick="() => DownloadListAsync()"> Mükellef Listesini İndir </Button>
+<Button Color="ButtonColor.Success" @onclick="() => SaveList()"> Mükellef Listesini Kaydet </Button>
+<Button Color="ButtonColor.Success" @onclick="() => BulkInsertList()"> Listeyi Kaydet - Bulk Insert</Button>
+<Button Color="ButtonColor.Danger" @onclick="() => DeleteList()"> Mükellef Listesini Sil </Button>
+<Button Color="ButtonColor.Danger" @onclick="() => BulkDeleteList()"> Listeyi Sil - Bulk Delete</Button>
+
 
 @code {
+  [Inject] protected PreloadService PreloadService { get; set; } = default!;
+
+  List<GibUserList> gibUserList = new List<GibUserList>();
+
+  public async Task DownloadListAsync()
+  {
+    PreloadService.Show(SpinnerColor.Light, "Liste entegratörden indiriliyor..");
+    //List<GibUserList> gibUserList = await GibUserListHelper.DownloadGibUserFullList();
+    PreloadService.Hide();
+
+
+  }
+
+  public void SaveList()
+  {
+  }
+
+  public void BulkInsertList()
+  {
+  }
+
+  public void DeleteList()
+  {
+  }
+
+  public void BulkDeleteList()
+  {
+  }
 
 }

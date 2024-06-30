@@ -15,4 +15,6 @@ public interface IGibUserListRepository
   Task<IEnumerable<GibUserList>> GetGibUserListAllAsync(string query, object? param = null);
   int ExecuteGibUserList(string query, GibUserList model);
   int GetCountGibUserList(string query);
+  void BulkInsertGibUserList(List<GibUserList> gibUserList);
+
 }
